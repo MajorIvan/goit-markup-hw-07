@@ -13,10 +13,10 @@
 </head>
 <body>
     <header class="header">
-        <div class="container">
+        <div class="container page-header-container">
             <a class="text-logo link" href="./index.html">Web<span class="header-logo">Studio</span></a>
             <nav class="header-nav">
-                <ul class="menu-list list">
+                <ul class="menu list">
                     <li class="menu-item">
                         <a class="menu-link link current" href="./index.html">Studio</a>
                     </li>
@@ -28,19 +28,98 @@
                     </li>
                 </ul>
             </nav>
-            <a class="header-contacts link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-            <a class="header-contacts link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+            <button type="button" class="mobile-menu-open js-open-menu">
+                <svg class="mobile-menu-open-icon" width="32px" height="22px">
+                    <use href="./images/icons.svg#icon-hamburger"></use>
+                </svg>
+            </button>
+            <div class="header-contacts-wrap">
+                <a class="header-contacts header-tel link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                <a class="header-contacts header-email link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+            </div>
+        </div>
+        <div class="mobile-menu js-menu-container">
+            <div class="container mobile-menu-container">
+                <button type="button" class="mobile-menu-close-btn js-close-menu">
+                    <svg class="mobile-menu-close-btn-icon" width="8px" height="8px">
+                        <use href="./images/icons.svg#icon-close"></use>
+                    </svg>
+                </button>
+                <nav class="mobile-nav">
+                    <ul class="mobile-nav-menu list">
+                        <li class="mobile-nav-menu-item">
+                            <a class="mobile-nav-menu-link link" href="./index.html">Studio</a>
+                        </li>
+                        <li class="mobile-nav-menu-item">
+                            <a class="mobile-nav-menu-link link" href="./portfolio.html">Portfolio</a>
+                        </li>
+                        <li class="mobile-nav-menu-item">
+                            <a class="mobile-nav-menu-link link current-mobile" href="">Contacts</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="mobile-contacts-wrap">
+                    <div class="mobile-contacts">
+                        <a class="mobile-menu-tel link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+                        <a class="mobile-menu-email link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    </div>
+                    <div class="mobile-soc">
+                        <ul class="mobile-soc-list list">
+                            <li class="mobile-soc-item">
+                                <a href="https://www.instagram.com/" 
+                                    rel="noopener noreferrer nofollow" 
+                                    target="_blank" 
+                                    class="mobile-soc-link link">
+                                    <svg class="mobile-soc-icon" width="16" height="16">
+                                        <use href="./images/icons.svg#icon-instagram"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="mobile-soc-item">
+                                <a href="https://twitter.com/" 
+                                    rel="noopener noreferrer nofollow" 
+                                    target="_blank" 
+                                    class="mobile-soc-link link">
+                                    <svg class="mobile-soc-icon" width="16" height="16">
+                                        <use href="./images/icons.svg#icon-twitter"></use>
+                                    </svg>
+                                </a>
+                            </li>                                    
+                            <li class="mobile-soc-item">
+                                <a href="https://www.facebook.com/" 
+                                    rel="noopener noreferrer nofollow" 
+                                    target="_blank" 
+                                    class="mobile-soc-link link">
+                                    <svg class="mobile-soc-icon" width="16" height="16">
+                                        <use href="./images/icons.svg#icon-facebook"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="mobile-soc-item">
+                                <a href="https://www.linkedin.com/" 
+                                    rel="noopener noreferrer nofollow" 
+                                    target="_blank" 
+                                    class="mobile-soc-link link">
+                                    <svg class="mobile-soc-icon" width="16" height="16">
+                                        <use href="./images/icons.svg#icon-linkedin"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>    
+                </div>
+            </div>
         </div>
     </header>
     <main>
         <section class="section hero">
-            <div class="container">
+            <div class="container hero-container">
                 <h1 class="hero-title">Effective Solutions for Your Business</h1>   
                 <button class="order-btn" type="button" data-modal-open>Order Service</button>
             </div>
         </section>
         <section class="section merits">
-            <div class="container">
+            <div class="container merits-container">
                 <h2 class="visually-hidden">Merits</h2>
                 <ul class="merits-list list">
                     <li class="merits-item">
@@ -49,7 +128,7 @@
                                 <use href="./images/icons.svg#icon-antenna"></use>
                             </svg>
                         </div>
-                        <h3 class="sub-title">Strategy</h3>
+                        <h3 class="sub-title merits-sub-title">Strategy</h3>
                         <p class="regular-text">Our goal is to identify the business problem to walk away with the perfect and creative solution.</p>
                     </li>
                     <li class="merits-item">
@@ -58,7 +137,7 @@
                                 <use href="./images/icons.svg#icon-clock"></use>
                             </svg>
                         </div>
-                        <h3 class="sub-title">Punctuality</h3>
+                        <h3 class="sub-title merits-sub-title">Punctuality</h3>
                         <p class="regular-text">Bring the key message to the brand's audience for the best price within the shortest possible time.</p>
                     </li>
                     <li class="merits-item">
@@ -67,7 +146,7 @@
                                 <use href="./images/icons.svg#icon-diagram"></use>
                             </svg>
                         </div>
-                        <h3 class="sub-title">Diligence</h3>
+                        <h3 class="sub-title merits-sub-title">Diligence</h3>
                         <p class="regular-text">Research and confirm brands that present the strongest digital growth opportunities and minimize risk.</p>
                     </li>
                     <li class="merits-item">
@@ -76,7 +155,7 @@
                                 <use href="./images/icons.svg#icon-astronaut"></use>
                             </svg>
                         </div>
-                        <h3 class="sub-title">Technologies</h3>
+                        <h3 class="sub-title merits-sub-title">Technologies</h3>
                         <p class="regular-text">Design practice focused on digital experiences. We bring forth a deep passion for problem-solving.</p>
                     </li>
                 </ul>
@@ -84,21 +163,43 @@
         </section>
         <section class="section accomplishments">
             <div class="container">
-                <h2 class="title">What are we doing</h2>
+                <h2 class="title accomplishments-title">What are we doing</h2>
                 <ul class="list">
-                    <li><img src="./images/apple_imac.jpg" alt="Apple iMAC desktop personal computer" width="360" height="300"></li>
-                    <li><img src="./images/smartphone_app.jpg" alt="Smartphone with social network app" width="360" height="300"></li>
-                    <li><img src="./images/travel_recomendation_app.jpg" alt="Photo on smartphone of The Most Inspiring Places" width="360" height="300"></li>
+                    <li>
+                        <img 
+                        srcset="./images/apple_imac@2x.webp 2x"
+                        src="./images/apple_imac.webp" 
+                        alt="Apple iMAC desktop personal computer" 
+                        width="360" 
+                        height="300"></li>
+                    <li>
+                        <img 
+                        srcset="./images/smartphone_app@2x.webp 2x"
+                        src="./images/smartphone_app.webp" 
+                        alt="Smartphone with social network app" 
+                        width="360" 
+                        height="300"></li>
+                    <li>
+                        <img 
+                        srcset="./images/travel_recomendation_app@2x.webp 2x"
+                        src="./images/travel_recomendation_app.webp" 
+                        alt="Photo on smartphone of The Most Inspiring Places" 
+                        width="360" 
+                        height="300"></li>
                 </ul>
             </div>
         </section>       
-        <section class="section team">
-            <div class="container">
-                <h2 class="title">Our Team</h2>
-                <ul class="list">
+    <section class="section team">
+            <div class="container team-container">
+                <h2 class="title team-title">Our Team</h2>
+                <ul class="list team-list">
                     <li class="team-card">
-                        <img src="./images/product_designer.jpg" alt="Product Designer photo" style="width: 100%; height: 260px;">
-                        <div class="card-wrap">
+                        <img 
+                            srcset="./images/product_designer@2x.webp 2x" 
+                            src="./images/product_designer.webp"
+                            alt="Product Designer photo" 
+                            style="width: 100%; height: 260px;">
+                        <div class="team-card-wrap">
                             <h3 class="sub-title">Mark Guerrero</h3>
                             <p class="regular-text">Product Designer</p>
                             <ul class="team-soc-list list">
@@ -133,8 +234,12 @@
                             </ul>
                         </div>
                     <li class="team-card">
-                        <img src="./images/frontend_developer.jpg" alt="Frontend Developer photo" style="width: 100%; height: 260px;">
-                        <div class="card-wrap">
+                        <img 
+                            srcset="./images/frontend_developer@2x.webp 2x" 
+                            src="./images/frontend_developer.webp"
+                            alt="Frontend Developer photo" 
+                            style="width: 100%; height: 260px;">
+                        <div class="team-card-wrap">
                             <h3 class="sub-title">Tom Ford</h3>
                             <p class="regular-text">Frontend Developer</p>
                             <ul class="team-soc-list list">
@@ -170,8 +275,12 @@
                         </div>
                     </li>
                     <li class="team-card">
-                        <img src="./images/women_marketing.jpg" alt="Photo of women from Marketing" style="width: 100%; height: 260px;">
-                        <div class="card-wrap">
+                        <img 
+                            srcset="./images/women_marketing@2x.webp 2x" 
+                            src="./images/women_marketing.webp"
+                            alt="Photo of women from Marketing" 
+                            style="width: 100%; height: 260px;">
+                        <div class="team-card-wrap">
                             <h3 class="sub-title">Camila Garcia</h3>
                             <p class="regular-text">Marketing</p>
                             <ul class="team-soc-list list">
@@ -207,8 +316,12 @@
                         </div>
                     </li>
                     <li class="team-card">
-                        <img src="./images/ui_designer.jpg" alt="User Interface Designer photo" style="width: 100%; height: 260px;">
-                        <div class="card-wrap">
+                        <img 
+                            srcset="./images/ui_designer@2x.webp 2x" 
+                            src="./images/ui_designer.webp"
+                            alt="User Interface Designer photo" 
+                            style="width: 100%; height: 260px;">
+                        <div class="team-card-wrap">
                             <h3 class="sub-title">Daniel Wilson</h3>
                             <p class="regular-text">UI Designer</p>
                             <ul class="team-soc-list list">
@@ -291,7 +404,7 @@
         </section>
     </main>
     <footer class="footer">
-        <div class="container">
+        <div class="container footer-container">
             <div class="footer-precept">
                 <a class="text-logo link" href="./index.html">Web<span class="footer-logo">Studio</span></a>
                 <p class="footer-txt regular-text">Increase the flow of customers and sales for your business with digital marketing & growth solutions.</p>
@@ -341,7 +454,7 @@
                                 name="user_email" 
                                 required>
                             <button type="submit" class="subscribe-form-btn">Subscribe
-                                <svg class="subscribe-form-btn-icon">
+                                <svg class="subscribe-form-btn-icon" width="24px" height="24px">
                                     <use href="./images/icons.svg#icon-send"></use>
                                 </svg>
                             </button>
@@ -422,7 +535,7 @@
                     <label 
                         for="user-policy" 
                         class="contact-form-fieldset-desc"
-                        >I accept the terms and conditions of the<a href="" class="contact-form-fieldset-link">Privacy Policy</a>
+                        >I accept the terms and conditions of the&nbsp;<a href="" class="contact-form-fieldset-link">Privacy Policy</a>
                     </label>
                 </div>
                 <div class="contact-form-btn-wrap">
@@ -431,6 +544,7 @@
             </form>
         </div>
     </div>
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
 </body>
 </html>
